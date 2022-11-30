@@ -17,8 +17,8 @@ body {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
   font-family: 'Poppins', sans-serif;
   color: var(--text);
@@ -90,14 +90,14 @@ button:active:enabled {
   user-select: none;
 }
 
-.header-menu-button:hover div {
-  background-color: var(--text);
-}
-
 .header-menu-button > div {
   width: 16px;
   height: 2px;
   background-color: var(--purple);
+}
+
+.header-menu-button:hover div {
+  background-color: var(--text);
 }
 
 .headline {
