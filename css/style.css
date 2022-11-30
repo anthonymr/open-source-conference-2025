@@ -1,21 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 :root {
-  --purple: #6070FF;
-  --blue: #2230D2;
-  --text: #172B4D;
-  --white: #FFFFFF;
-  --gray: #C1C7D0;
-  --dark-gray: #5E6C84;
+  --purple: #6070ff;
+  --blue: #2230d2;
+  --text: #172b4d;
+  --white: #fff;
+  --gray: #c1c7d0;
+  --dark-gray: #5e6c84;
 }
 
-html, body {
+html,
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   font-family: 'Poppins', sans-serif;
   color: var(--text);
@@ -54,20 +57,20 @@ button {
   border-radius: 8px;
 }
 
+button:disabled {
+  border: 1px solid var(--gray);
+  color: var(--dark-gray);
+}
+
 button:hover:enabled {
   background-color: var(--purple);
   color: var(--white);
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 button:active:enabled {
   background-color: var(--blue);
   color: var(--white);
-}
-
-button:disabled {
-  border: 1px solid var(--gray);
-  color: var(--dark-gray);
 }
 
 .header-logo {
@@ -130,7 +133,7 @@ button:disabled {
 }
 
 .testing-buttons {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
 }
