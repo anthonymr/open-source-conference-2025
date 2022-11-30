@@ -54,13 +54,13 @@ button {
   border-radius: 8px;
 }
 
-button:hover {
+button:hover:enabled {
   background-color: var(--purple);
   color: var(--white);
   box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
 }
 
-button:focus {
+button:active:enabled {
   background-color: var(--blue);
   color: var(--white);
 }
