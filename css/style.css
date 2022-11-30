@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 :root {
-    --purple: #6070FF;
-    --text: #172B4D;
+  --purple: #6070FF;
+  --blue: #2230D2;
+  --text: #172B4D;
+  --white: #FFFFFF;
+  --gray: #C1C7D0;
+  --dark-gray: #5E6C84;
 }
 
 html, body {
@@ -38,6 +42,34 @@ ul {
   margin: 0;
 }
 
+button {
+  border: 1px solid var(--purple);
+  color: var(--purple);
+  background-color: var(--white);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 12px;
+  gap: 10px;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: var(--purple);
+  color: var(--white);
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+button:focus {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+button:disabled {
+  border: 1px solid var(--gray);
+  color: var(--dark-gray);
+}
+
 .nav-logo {
   color: var(--purple);
   font-weight: 700;
@@ -53,6 +85,10 @@ ul {
   padding: 12px 0;
   cursor: pointer;
   user-select: none;
+}
+
+.nav-menu-button:hover div {
+  background-color: var(--text);
 }
 
 .nav-menu-button > div {
@@ -84,11 +120,11 @@ ul {
 }
 
 .main-section_social {
-    display: flex;
+  display: flex;
 }
 
 .main-section_social img {
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
 }
