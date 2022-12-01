@@ -268,6 +268,10 @@ button:active:enabled {
   margin: 0 0 0 12px;
 }
 
+.about-myself_menu-wrapper {
+  width: 100%;
+}
+
 .languages-title {
   padding: 24px 0 20px;
 }
@@ -306,4 +310,12 @@ button:active:enabled {
   padding-right: 50px;
   user-select: none;
   cursor: pointer;
+}
+
+.expanded > .about-myself_menu-item {
+  border: none;
+}
+
+.expanded > .about-myself_menu-item > img {
+  rotate: 90deg;
 }
