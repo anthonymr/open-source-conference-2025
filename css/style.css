@@ -253,6 +253,8 @@ button:active:enabled {
 
 .about-myself {
   border-top-right-radius: 70px;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-myself > .social_wrapper {
