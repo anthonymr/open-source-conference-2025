@@ -10,6 +10,8 @@
   --dark-gray: #5e6c84;  
   --background: #e5e5e5;
   --border: #dfe1e6;
+  --black: #00;
+  --language-background: #f7f7f9;
 }
 
 html,
@@ -252,4 +254,51 @@ button:active:enabled {
 
 .about-myself > .social_wrapper {
   margin: 3px 0;
+}
+
+.about-myself h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black);
+  margin: 0 0 0 12px;
+}
+
+.languages-title {
+  padding: 24px 0 20px;
+}
+
+.languages-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  width: 100%;
+}
+
+.languages-wrapper > li {
+  background-color: var(--language-background);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.languages-wrapper img {
+  width: 48px;
+  height: 48px;
+}
+
+.about-myself_menu-item {
+  height: 72px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  padding-right: 50px;
+  user-select: none;
+  cursor: pointer;
 }
