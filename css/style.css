@@ -8,6 +8,7 @@
   --gray: #c1c7d0;
   --dark-gray: #5e6c84;
   --background: #e5e5e5;
+  --border: #dfe1e6;
 }
 
 html,
@@ -32,6 +33,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+  background-color: var(--white);
 }
 
 a {
@@ -60,8 +62,7 @@ button {
 }
 
 main {
-  border-bottom-left-radius: 70px;
-  background-color: var(--white);
+  background-color: var(--background);
   max-height: 100vh;
 }
 
@@ -115,8 +116,10 @@ button:active:enabled {
   padding: 114px 24px 150px 24px;
   gap: 12px;
   background-image: url(../img/background.svg);
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom-left-radius: 70px;
 }
 
 .headline_title {
@@ -145,3 +148,12 @@ button:active:enabled {
   justify-content: space-around;
   padding: 20px 0;
 }
+
+.works-wrapper {
+  display: grid;
+  grid-template: repeat(4, 1fr) / 1fr;
+  background-color: var(--background);
+  padding: 114px 24px;
+  gap: 114px;
+}
+
