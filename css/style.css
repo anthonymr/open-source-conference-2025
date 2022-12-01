@@ -7,11 +7,13 @@
   --white: #fff;
   --gray: #c1c7d0;
   --medium-gray: #7a869a;
-  --dark-gray: #5e6c84;  
+  --dark-gray: #5e6c84;
   --background: #e5e5e5;
   --border: #dfe1e6;
-  --black: #00;
+  --black: #000;
   --language-background: #f7f7f9;
+  --tag-background: #ebebff;
+  --tag-color: #6070ff;
 }
 
 html,
@@ -207,8 +209,9 @@ button:active:enabled {
   line-height: 16px;
 }
 
-.work-card_specs > div {
-  color: #7A869A;
+.work-card_specs > .specs_role,
+.work-card_specs > .specs_year {
+  color: #7a869a;
 }
 
 .work-card_specs .specs_client {
@@ -240,11 +243,11 @@ button:active:enabled {
   flex-direction: row;
   align-items: center;
   padding: 4px 12px;
-  background: #EBEBFF;
+  background: var(--tag-background);
   border-radius: 8px;
   font-size: 12px;
   line-height: 16px;
-  color: #6070FF;
+  color: var(--tag-color);
   letter-spacing: 0.03em;
 }
 
