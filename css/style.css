@@ -172,9 +172,13 @@ button:active:enabled {
 }
 
 .work-card_picture {
-  height: 220px;
+  height: auto;
   width: 100%;
-  background-color: #172b4d;
+  border-radius: 8px;
+}
+
+.work-card_picture > img {
+  width: 100%;
 }
 
 .work-card_title {
