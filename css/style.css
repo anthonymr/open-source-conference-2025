@@ -207,6 +207,13 @@ textarea {
   gap: 12px;
 }
 
+.work-card_elements {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
 .work-card_picture {
   height: auto;
   width: 100%;
@@ -416,6 +423,10 @@ textarea {
     color: var(--text);
   }
 
+  .headline {
+    background-image: url(../img/desktop-header-background.svg);
+  }
+
   .generic-container {
     background-color: white;
     display: flex;
@@ -423,5 +434,31 @@ textarea {
     align-items: flex-start;
     padding: 300px 260px;
     gap: 12px;
+  }
+
+  .work-card {
+    height: auto;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 12px;
+    margin: 0 10%;
+    width: calc(100% - 20%);
+  }
+
+  .work-card:nth-child(even){
+    flex-direction: row-reverse;
+  }
+
+  .work-card_elements {
+    width: 50%;
+  }
+  
+  .work-card_picture {
+    width: 50%;
   }
 }
