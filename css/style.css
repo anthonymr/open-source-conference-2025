@@ -69,6 +69,7 @@ button {
   padding: 12px;
   gap: 10px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 main {
@@ -196,14 +197,14 @@ textarea {
 
 .work-card {
   width: 100%;
-  height: auto;
+  height: fit-content;
   background-color: var(--white);
   border: 1px solid var(--border);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px;
+  padding: 16px 16px 0 16px;
   gap: 12px;
 }
 
@@ -304,6 +305,15 @@ textarea {
   margin: 0 0 0 12px;
 }
 
+.about-myself_elements {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+
 .about-myself_menu-wrapper {
   width: 100%;
 }
@@ -364,7 +374,7 @@ textarea {
   display: flex;
   padding: 90px 25px 8px 25px;
   background-color: var(--purple);
-  border-top-left-radius: 80px;
+  border-top-left-radius: 70px;
   flex-direction: column;
   align-items: center;
   background-image: url(../img/footer-background.svg);
@@ -393,6 +403,18 @@ textarea {
 }
 
 @media screen and (min-width: 800px){
+
+  body {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border-radius: 0;
+  }
+
   header {
     padding: 30px 155px;
   }
@@ -425,6 +447,7 @@ textarea {
 
   .headline {
     background-image: url(../img/desktop-header-background.svg);
+    border-bottom-left-radius: 120px;
   }
 
   .generic-container {
@@ -432,8 +455,17 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 300px 260px;
+    padding: 142px 260px;
     gap: 12px;
+  }
+
+  .headline.generic-container {
+    padding: 250px;
+  }
+
+  .generic_title {
+    font-size: 48px;
+    line-height: 60px;
   }
 
   .work-card {
@@ -444,8 +476,8 @@ textarea {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 16px;
-    gap: 12px;
+    padding: 40px;
+    gap: 50px;
     margin: 0 10%;
     width: calc(100% - 20%);
   }
@@ -454,11 +486,74 @@ textarea {
     flex-direction: row-reverse;
   }
 
+  .work-card:hover {
+    border: 2px solid #A7AEFF;
+    cursor: pointer;
+    filter: drop-shadow(0px 48px 48px rgba(37, 47, 137, 0.08));
+  }
+
   .work-card_elements {
     width: 50%;
   }
   
   .work-card_picture {
     width: 50%;
+  }
+
+  .work-card_description {
+    font-size: 16px;
+  }
+
+  .about-myself {
+    border-top-right-radius: 120px;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .about-myself_elements {
+    width: 40%;
+  }
+
+  .about-myself_menu-wrapper {
+    width: 60%;
+  }
+
+  .contact-form__wrapper {
+    border-top-left-radius: 120px;
+    padding: 142px 260px;
+    background-image: url("../img/desktop-footer-background.svg");
+    background-size: 100%;
+  }
+
+  .languages-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 12px;
+    width: 100%;
+  }
+  
+  .languages-wrapper > li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact_form__form {
+    text-align: center;
+  }
+
+  .contact-form__black-bar {
+    display: none;
+  }
+
+  .work-card_specs {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .specs_client {
+    font-weight: 500;
   }
 }
