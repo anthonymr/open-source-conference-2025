@@ -91,6 +91,25 @@ button:active:enabled {
   color: var(--white);
 }
 
+input[type="text"],
+input[type="email"],
+textarea {
+  font-size: 17px;
+  line-height: 20px;
+  padding: 16px 38px 15px 15px;
+  font-weight: 400;
+  border: none;
+  color: var(--text);
+  width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+textarea {
+  resize: none;
+  height: 170px;
+}
+
 .header-logo {
   color: var(--purple);
   font-weight: 700;
@@ -344,4 +363,5 @@ button:active:enabled {
   line-height: 28px;
   font-weight: 400;
   color: var(--tag-background);
+  margin-bottom: 70px;
 }
