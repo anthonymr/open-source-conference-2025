@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 :root {
   --purple: #6070ff;
@@ -14,6 +14,7 @@
   --language-background: #f7f7f9;
   --tag-background: #ebebff;
   --tag-color: #6070ff;
+  --black-bar: #0d151e;
 }
 
 html,
@@ -28,7 +29,7 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--text);
 }
 
@@ -91,6 +92,25 @@ button:active:enabled {
   color: var(--white);
 }
 
+input[type="text"],
+input[type="email"],
+textarea {
+  font-size: 17px;
+  line-height: 20px;
+  padding: 16px 38px 15px 15px;
+  font-weight: 400;
+  border: none;
+  color: var(--text);
+  width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+textarea {
+  resize: none;
+  height: 170px;
+}
+
 .header-logo {
   color: var(--purple);
   font-weight: 700;
@@ -106,6 +126,13 @@ button:active:enabled {
   padding: 12px 0;
   cursor: pointer;
   user-select: none;
+}
+
+.contact-form__black-bar > div {
+  width: 134px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: var(--black-bar);
 }
 
 .header-menu-button > div {
@@ -318,4 +345,40 @@ button:active:enabled {
 
 .expanded > .about-myself_menu-item > img {
   rotate: 90deg;
+}
+
+.contact-form {
+  background-color: var(--white);
+}
+
+.contact-form__wrapper {
+  display: flex;
+  padding: 90px 25px 8px 25px;
+  background-color: var(--purple);
+  border-top-left-radius: 80px;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/footer-background.svg);
+  background-repeat: no-repeat;
+  background-position: top 40px right;
+}
+
+.contant-form__header {
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--white);
+}
+
+.contact_form__paragraph {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--tag-background);
+  margin-bottom: 50px;
+}
+
+.contact-form__black-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
 }
