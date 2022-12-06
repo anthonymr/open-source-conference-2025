@@ -313,7 +313,6 @@ textarea {
   padding: 20px;
 }
 
-
 .about-myself_menu-wrapper {
   width: 100%;
 }
@@ -402,8 +401,7 @@ textarea {
   margin-top: 32px;
 }
 
-@media screen and (min-width: 800px){
-
+@media screen and (min-width: 800px) {
   body {
     font-size: 20px;
     line-height: 28px;
@@ -482,20 +480,20 @@ textarea {
     width: calc(100% - 20%);
   }
 
-  .work-card:nth-child(even){
+  .work-card:nth-child(even) {
     flex-direction: row-reverse;
   }
 
   .work-card:hover {
-    border: 2px solid #A7AEFF;
+    border: 2px solid #a7aeff;
     cursor: pointer;
-    filter: drop-shadow(0px 48px 48px rgba(37, 47, 137, 0.08));
+    filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
   }
 
   .work-card_elements {
     width: 50%;
   }
-  
+
   .work-card_picture {
     width: 50%;
   }
@@ -532,7 +530,7 @@ textarea {
     padding: 12px;
     width: 100%;
   }
-  
+
   .languages-wrapper > li {
     display: flex;
     flex-direction: column;
