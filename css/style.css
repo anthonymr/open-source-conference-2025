@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 :root {
   --purple: #6070ff;
@@ -28,7 +28,7 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--text);
 }
 
@@ -318,4 +318,30 @@ button:active:enabled {
 
 .expanded > .about-myself_menu-item > img {
   rotate: 90deg;
+}
+
+.contact-form {
+  background-color: var(--white);
+}
+
+.contact-form__wrapper {
+  display: flex;
+  padding: 90px 25px 45px 25px;
+  background-color: var(--purple);
+  border-top-left-radius: 80px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contant-form__header {
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--white);
+}
+
+.contact_form__paragraph {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--tag-background);
 }
