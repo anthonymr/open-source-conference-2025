@@ -139,6 +139,8 @@ textarea {
   width: 16px;
   height: 2px;
   background-color: var(--purple);
+  color: transparent;
+  overflow: hidden;
 }
 
 .header-menu-button:hover div {
@@ -384,5 +386,28 @@ textarea {
 }
 
 @media screen and (min-width: 600px){
+  header {
+    padding: 30px 155px;
+  }
 
+  .header-menu-button {
+    width: auto;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .header-menu-button > div {
+    width: 100px;
+    height: 20px;
+    margin-left: 10px;
+    background-color: transparent;
+    font-size: 15px;
+    color: #344563;
+  }
 }
