@@ -14,6 +14,7 @@
   --language-background: #f7f7f9;
   --tag-background: #ebebff;
   --tag-color: #6070ff;
+  --black-bar: #0d151e;
 }
 
 html,
@@ -345,11 +346,14 @@ textarea {
 
 .contact-form__wrapper {
   display: flex;
-  padding: 90px 25px 45px 25px;
+  padding: 90px 25px 8px 25px;
   background-color: var(--purple);
   border-top-left-radius: 80px;
   flex-direction: column;
   align-items: center;
+  background-image: url(../img/footer-background.svg);
+  background-repeat: no-repeat;
+  background-position: top 40px right;
 }
 
 .contant-form__header {
@@ -363,5 +367,18 @@ textarea {
   line-height: 28px;
   font-weight: 400;
   color: var(--tag-background);
-  margin-bottom: 70px;
+  margin-bottom: 50px;
+}
+
+.contact-form__black-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.contact-form__black-bar > div {
+  width: 134px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: var(--black-bar);
 }
