@@ -382,3 +382,7 @@ textarea {
   justify-content: center;
   margin-top: 32px;
 }
+
+@media screen and (min-width: 600px){
+
+}
