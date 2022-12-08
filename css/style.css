@@ -128,6 +128,7 @@ textarea {
   padding: 12px 0;
   cursor: pointer;
   user-select: none;
+  transition: all .3s;
 }
 
 .contact-form__black-bar > div {
@@ -143,6 +144,7 @@ textarea {
   background-color: var(--purple);
   color: transparent;
   overflow: hidden;
+  transition: all .3s;
 }
 
 .header-menu-button:hover div {
