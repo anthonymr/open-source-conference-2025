@@ -70,7 +70,7 @@ button {
   gap: 10px;
   border-radius: 8px;
   cursor: pointer;
-  transition: all .1s linear;
+  transition: all 0.1s linear;
 }
 
 main {
@@ -207,6 +207,7 @@ textarea {
   align-items: flex-start;
   padding: 16px 16px 0 16px;
   gap: 12px;
+  transition: all 1.1s;
 }
 
 .work-card_elements {
@@ -489,6 +490,7 @@ textarea {
     border: 2px solid #a7aeff;
     cursor: pointer;
     filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
+    scale: 1.03;
   }
 
   .work-card_elements {
