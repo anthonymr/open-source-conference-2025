@@ -70,6 +70,7 @@ button {
   gap: 10px;
   border-radius: 8px;
   cursor: pointer;
+  transition: all .1s linear;
 }
 
 main {
