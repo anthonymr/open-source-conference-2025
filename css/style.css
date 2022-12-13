@@ -138,6 +138,10 @@ textarea {
   background-color: var(--black-bar);
 }
 
+.form-label {
+  display: none;
+}
+
 .header-menu-button > div {
   width: 16px;
   height: 2px;
