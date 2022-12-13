@@ -45,7 +45,8 @@
           </li>
           <li>
             <a href="#"
-              ><img src="img/social5.svg" alt="Another Social Media" /></a>
+              ><img src="img/social5.svg" alt="Another Social Media"
+            /></a>
           </li>
         </ul>
       </section>
@@ -79,7 +80,7 @@
 
         <article class="work-card">
           <div class="work-card_picture">
-            <img src="img/posts/multi-post1.png" alt="Multi-Post Stories" />
+            <img src="img/posts/multi-post1.png" alt="Multi-Post" />
           </div>
           <div  class="work-card_elements">
             <h3 class="work-card_title">Multi-Post Stories</h3>
@@ -131,7 +132,7 @@
 
         <article class="work-card">
           <div class="work-card_picture">
-            <img src="img/posts/multi-post2.png" alt="Multi-Post Stories" />
+            <img src="img/posts/multi-post2.png" alt="Multi-Post" />
           </div>
           <div  class="work-card_elements">
             <h3 class="work-card_title">Multi-Post Stories</h3>
@@ -197,15 +198,15 @@
 
             <ul class="languages-wrapper">
               <li>
-                <img src="img/javaScript.png" alt="JavaScript logo" />
+                <img src="img/javaScript.png" alt="JavaScript" />
                 JavaScript
               </li>
               <li>
-                <img src="img/HTML.png" alt="HTML logo" />
+                <img src="img/HTML.png" alt="HTML" />
                 HTML
               </li>
               <li>
-                <img src="img/CSS.png" alt="CSS logo" />
+                <img src="img/CSS.png" alt="CSS" />
                 CSS
               </li>
             </ul>
@@ -214,14 +215,14 @@
           <li>
             <div class="about-myself_menu-item">
               <h4>Frameworks</h4>
-              <img src="img/chevron-right.svg" alt="chevron icon" />
+              <img src="img/chevron-right.svg" />
             </div>
           </li>
 
           <li>
             <div class="about-myself_menu-item">
               <h4>Skills</h4>
-              <img src="img/chevron-right.svg"  alt="chevron icon"/>
+              <img src="img/chevron-right.svg" />
             </div>
           </li>
         </ul>
@@ -240,21 +241,26 @@
             class="contact_form__form"
             action="https://formspree.io/f/mrgdnpkk"
             method="POST"
-          >
+          > 
+            <label for="name" class="form-label">Your name</label>
             <input
               type="text"
               name="name"
               maxlength="30"
               placeholder="Your name"
               required
-            />
+              />
+            
+            <label for="email" class="form-label"></label>
             <input
               type="email"
               name="email"
               required
               placeholder="Your e-mail"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            />
+              />
+
+            <label for="message" class="form-label"></label>
             <textarea
               name="message"
               maxlength="500"
