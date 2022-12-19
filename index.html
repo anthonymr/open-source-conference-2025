@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anthony Martin Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="main.js" defer></script>
   </head>
 
   <body>
@@ -13,7 +14,7 @@
       <header>
         <div class="header-logo">Anthony Martin</div>
         <nav>
-          <div class="header-menu-button">
+          <div class="header-menu-button" id="hamburger">
             <div>Portfolio</div>
             <div>About</div>
             <div>Contact</div>
@@ -21,7 +22,7 @@
         </nav>
       </header>
 
-      <section class="headline generic-container">
+      <section class="headline generic-container" id="headline">
         <h1 class="generic_title">I’m Anthony Glad to see you!</h1>
         <p>
           I’m a software developer! I can help you build a product , feature or
@@ -51,7 +52,7 @@
         </ul>
       </section>
 
-      <section class="works-wrapper">
+      <section class="works-wrapper" id="works-wrapper">
         <article class="work-card">
           <div class="work-card_picture">
             <img src="img/posts/tonic1.png" alt="Tonic" />
@@ -157,7 +158,7 @@
         </article>
       </section>
 
-      <section class="about-myself generic-container">
+      <section class="about-myself generic-container" id="about-myself">
         <div class="about-myself_elements">
           <h2 class="generic_title">About Myself</h2>
           <p>
@@ -228,7 +229,7 @@
         </ul>
       </section>
 
-      <section class="contact-form">
+      <section class="contact-form" id="contact-form">
         <div class="contact-form__wrapper">
           <h2 class="contant-form__header">Contact me</h2>
           <p class="contact_form__paragraph">
@@ -274,6 +275,17 @@
             </div>
           </form>
         </div>
+      </section>
+
+      <section class="mobile-menu hidden" id="mobile-menu">
+        <div class="mobile-menu__close">
+          <img src="img/close-icon.png" id="close-img">
+        </div>
+        <ul>
+          <li><a href="#works-wrapper">Portfolio</a></li>
+          <li><a href="#about-myself">About</a></li>
+          <li><a href="#contact-form">Contact</a></li>
+        </ul>
       </section>
     </main>
   </body>
