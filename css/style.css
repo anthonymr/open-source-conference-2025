@@ -204,7 +204,7 @@ textarea {
 
 .work-card {
   width: 100%;
-  height: fit-content;
+  height: auto;
   background-color: var(--white);
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -365,14 +365,6 @@ textarea {
   cursor: pointer;
 }
 
-.expanded > .about-myself_menu-item {
-  border: none;
-}
-
-.expanded > .about-myself_menu-item > img {
-  rotate: 90deg;
-}
-
 .contact-form {
   background-color: var(--white);
 }
@@ -411,8 +403,8 @@ textarea {
 
 .mobile-menu {
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
   background-color: rgba(96, 112, 255, 0.85);
@@ -444,6 +436,14 @@ textarea {
 .mobile-menu__close > img {
   cursor: pointer;
   user-select: none;
+}
+
+.expanded > .about-myself_menu-item {
+  border: none;
+}
+
+.expanded > .about-myself_menu-item > img {
+  rotate: 90deg;
 }
 
 .hidden {
