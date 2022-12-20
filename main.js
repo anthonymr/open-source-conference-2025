@@ -70,8 +70,8 @@ projects.forEach((project) => {
   article.classList.add('work-card');
 
   function concatenateTechnologies(acc, cur) {
-     const final = acc += `<li class="tag">${cur}</li>`;
-     return final;
+    acc += `<li class="tag">${cur}</li>`;
+    return acc;
   }
 
   const technologies = project.technologies.reduce(concatenateTechnologies, '');
