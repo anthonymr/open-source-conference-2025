@@ -69,12 +69,13 @@ projects.forEach((project) => {
   const article = document.createElement('article');
   article.classList.add('work-card');
 
-  function concatenateTechnologies(acc, cur){
-    return acc += '<li class="tag">' + cur + '</li>';
+  function concatenateTechnologies(acc, cur) {
+     const final = acc += `<li class="tag">${cur}</li>`;
+     return final;
   }
 
   const technologies = project.technologies.reduce(concatenateTechnologies, '');
-  let buttonId = 'see-project-' + project.id.toString();
+  const buttonId = `see-project-${project.id}`;
 
   article.innerHTML = `
   <div class="work-card_picture">
@@ -99,7 +100,7 @@ projects.forEach((project) => {
 
   projectWrapper.appendChild(article);
 
-  const projectButton = document.querySelector('#' + buttonId.toString());
+  const projectButton = document.querySelector(`#${buttonId}`);
 
   projectButton.addEventListener('click', () => {
     modalContent.innerHTML = `
