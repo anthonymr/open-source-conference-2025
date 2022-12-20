@@ -4,6 +4,11 @@ const mobileMenu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelectorAll('#mobile-menu li');
 
 const projectWrapper = document.querySelector('#works-wrapper');
+const modal = document.querySelector('#modal');
+const closeModal = document.querySelector('#close-modal');
+const modalContent = document.querySelector('#modal-content');
+
+closeModal.addEventListener('click', () => modal.classList.add('hidden'));
 
 const projects = [
   {
@@ -16,8 +21,8 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: 'tonic1.png',
     technologies: ['html', 'css', 'javaScript'],
-    liveVersion: '#',
-    source: '#',
+    liveVersion: 'https://anthonymr.github.io/',
+    source: 'https://github.com/anthonymr/Anthony-Martin-Portfolio',
   },
   {
     id: 2,
@@ -29,8 +34,8 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: 'multi-post1.png',
     technologies: ['html', 'css', 'javaScript'],
-    liveVersion: '#',
-    source: '#',
+    liveVersion: 'https://anthonymr.github.io/',
+    source: 'https://github.com/anthonymr/Anthony-Martin-Portfolio',
   },
   {
     id: 3,
@@ -42,8 +47,8 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: 'tonic2.png',
     technologies: ['html', 'css', 'javaScript'],
-    liveVersion: '#',
-    source: '#',
+    liveVersion: 'https://anthonymr.github.io/',
+    source: 'https://github.com/anthonymr/Anthony-Martin-Portfolio',
   },
   {
     id: 4,
@@ -55,8 +60,8 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: 'multi-post2.png',
     technologies: ['html', 'css', 'javaScript'],
-    liveVersion: '#',
-    source: '#',
+    liveVersion: 'https://anthonymr.github.io/',
+    source: 'https://github.com/anthonymr/Anthony-Martin-Portfolio',
   },
 ];
 
@@ -89,6 +94,56 @@ projects.forEach(project => {
   `;
 
   projectWrapper.appendChild(article);
+
+  const projectButton = document.querySelector('#' + buttonId);
+
+  projectButton.addEventListener('click', () => {
+    modalContent.innerHTML = `
+      <h3 class="work-card_title">${project.name}</h3>
+
+      <div class="work-card_specs">
+        <div class="specs_client">${project.company}</div>
+        <div class="dot"></div>
+        <div class="specs_role">${project.position}</div>
+        <div class="dot"></div>
+        <div class="specs_year">${project.year}</div>
+      </div>
+
+      <div class="work-card_picture">
+        <img src="img/posts/${project.featuredImage}" alt="Multi-Post stories" />
+      </div>
+
+      <div class="modal_description">
+
+        <p class="work-card_description">
+          ${project.description}
+        </p>
+
+        <div class="modal__footer">
+
+          <ul class="work-card_techs">
+            ${technologies}
+          </ul>
+
+          <div class="work-card_bar"></div>
+          <div class="modal__footer__buttons">
+            <button class="work-card_button" onClick="location.href='${project.liveVersion}'">
+              See live
+              <img src="img/see_live.svg">
+            </button>
+            <button class="work-card_button" onClick="location.href='${project.source}'">
+              See Source
+              <img src="img/purple_github.svg">
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    `;
+    modal.classList.remove('hidden');
+  });
+
 });
 
 function toggleMenu() {
