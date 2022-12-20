@@ -7,6 +7,7 @@ const projectWrapper = document.querySelector('#works-wrapper');
 
 const projects = [
   {
+    id: 1,
     name: 'Tonic',
     company: 'Canopy',
     position: 'Back End Dev',
@@ -19,6 +20,7 @@ const projects = [
     source: '#',
   },
   {
+    id: 2,
     name: 'Multi-Post Stories',
     company: 'Canopy',
     position: 'Back End Dev',
@@ -31,6 +33,7 @@ const projects = [
     source: '#',
   },
   {
+    id: 3,
     name: 'Tonic',
     company: 'Canopy',
     position: 'Back End Dev',
@@ -43,6 +46,7 @@ const projects = [
     source: '#',
   },
   {
+    id: 4,
     name: 'Multi-Post Stories',
     company: 'Canopy',
     position: 'Back End Dev',
@@ -61,6 +65,7 @@ projects.forEach(project => {
   article.classList.add('work-card');
 
   let technologies = project.technologies.reduce((acc, cur) => acc += '<li class="tag">' + cur + '</li>', '');
+  let buttonId = 'see-project-' + project.id;
 
   article.innerHTML = `
   <div class="work-card_picture">
@@ -79,7 +84,7 @@ projects.forEach(project => {
     <ul class="work-card_techs">
       ${technologies}
     </ul>
-    <button class="work-card_button">See Project</button>
+    <button class="work-card_button" id="${buttonId}">See Project</button>
   </div>
   `;
 
