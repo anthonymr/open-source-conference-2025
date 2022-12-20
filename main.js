@@ -65,12 +65,16 @@ const projects = [
   },
 ];
 
-projects.forEach(project => {
+projects.forEach((project) => {
   const article = document.createElement('article');
   article.classList.add('work-card');
 
-  let technologies = project.technologies.reduce((acc, cur) => acc += '<li class="tag">' + cur + '</li>', '');
-  let buttonId = 'see-project-' + project.id;
+  function concatenateTechnologies(acc, cur){
+    return acc += '<li class="tag">' + cur + '</li>';
+  }
+
+  const technologies = project.technologies.reduce(concatenateTechnologies, '');
+  let buttonId = 'see-project-' + project.id.toString();
 
   article.innerHTML = `
   <div class="work-card_picture">
@@ -95,7 +99,7 @@ projects.forEach(project => {
 
   projectWrapper.appendChild(article);
 
-  const projectButton = document.querySelector('#' + buttonId);
+  const projectButton = document.querySelector('#' + buttonId.toString());
 
   projectButton.addEventListener('click', () => {
     modalContent.innerHTML = `
@@ -143,7 +147,6 @@ projects.forEach(project => {
     `;
     modal.classList.remove('hidden');
   });
-
 });
 
 function toggleMenu() {
@@ -156,4 +159,3 @@ closeMenu.addEventListener('click', toggleMenu);
 menuLinks.forEach((link) => {
   link.addEventListener('click', toggleMenu);
 });
-
