@@ -15,6 +15,7 @@
   --tag-background: #ebebff;
   --tag-color: #6070ff;
   --black-bar: #0d151e;
+  --error: #f55050;
 }
 
 html,
@@ -346,6 +347,19 @@ textarea {
   gap: 12px;
   padding: 12px;
   width: 100%;
+}
+
+.error-message {
+  height: 30px;
+  margin-top: -12px;
+}
+
+.error-message > span {
+  color: var(--error);
+  font-size: 12px;
+  background-color: white;
+  padding: 2px 10px;
+  border-radius: 5px;
 }
 
 .languages-wrapper > li {

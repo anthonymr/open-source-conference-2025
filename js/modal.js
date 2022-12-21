@@ -1,8 +1,3 @@
-const hamburger = document.querySelector('#hamburger');
-const closeMenu = document.querySelector('#close-img');
-const mobileMenu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelectorAll('#mobile-menu li');
-
 const projectWrapper = document.querySelector('#works-wrapper');
 const modal = document.querySelector('#modal');
 const closeModal = document.querySelector('#close-modal');
@@ -148,15 +143,4 @@ projects.forEach((project) => {
     `;
     modal.classList.remove('hidden');
   });
-});
-
-function toggleMenu() {
-  mobileMenu.classList.toggle('hidden');
-}
-
-hamburger.addEventListener('click', toggleMenu);
-closeMenu.addEventListener('click', toggleMenu);
-
-menuLinks.forEach((link) => {
-  link.addEventListener('click', toggleMenu);
 });
