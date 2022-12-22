@@ -12,3 +12,13 @@ fields.forEach((field) => {
         localStorage.setItem('portfolio-form-data', JSON.stringify(formData));
     });
 });
+
+window.addEventListener("load", () => {
+    let storedData = localStorage.getItem('portfolio-form-data');
+    formData = JSON.parse(storedData);
+
+    fields.forEach((field) => {
+        field.value = formData[field.name];
+    });
+});
+
