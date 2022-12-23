@@ -69,7 +69,7 @@ projects.forEach((project) => {
     return acc;
   }
 
-  const technologies = project.technologies.reduce(concatenateTechnologies, '');
+  const technologies = project.technologies.reduce(concatenateTechnologies);
   const buttonId = `see-project-${project.id}`;
 
   article.innerHTML = `
