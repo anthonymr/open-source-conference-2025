@@ -57,7 +57,7 @@ featuredSpeakers.forEach((speaker) => {
   newSpeaker.innerHTML = `
     <div class='featured-speaker__picture'>
       <div class='dark-chess-bg'></div>
-      <img src='../img/profiles/${speaker.picture}'>
+      <img src='img/profiles/${speaker.picture}'>
     </div>
     <div class='featured-speaker__info'>
       <h4>${speaker.name}</h4>
