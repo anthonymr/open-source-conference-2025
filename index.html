@@ -1,225 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anthony Martin | Full-stack Developer</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="index.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anthony Martin Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/menu.js" defer></script>
+  <script src="js/modal.js" defer></script>
+  <script src="js/form_validation.js" defer></script>
+  <script src="js/local_storage.js" defer></script>
 </head>
+
 <body>
-  <nav class="dark">
-    <ul>
-      <li><a onclick="goTo('home')">Home</a></li>
-      <li><a onclick="goTo('last-projects')">Last projects</a></li>
-      <li><a onclick="goTo('current-stack')">Current stack</a></li>
-      <li><a onclick="goTo('contact-me')">Contact me</a></li>
-    </ul>
-  </nav>
-  <header id="home">
-    <div>
-      <div class="title">
-        <a href="/"><h1><span>A</span>nthony <span>M</span>artin</h1></a>
-        <h2>Full-stack Developer</h2>
+  <main>
+    <header>
+      <div class="header-logo">Anthony Martin</div>
+      <nav>
+        <div class="header-menu-button" id="hamburger">
+          <div>Portfolio</div>
+          <div>About</div>
+          <div>Contact</div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="headline generic-container" id="headline">
+      <h1 class="generic_title">I’m Anthony Glad to see you!</h1>
+      <p>
+        I’m a software developer! I can help you build a product , feature or
+        website Look through some of my work and experience! If you like what
+        you see and have a project you need coded, don’t hestiate to contact
+        me.
+      </p>
+      <a href="https://wa.me/584142221022">Let’s connect</a>
+      <ul class="social_wrapper">
+        <li>
+          <a href="#"><img src="img/social1.svg" alt="Twitter" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/social2.svg" alt="LinkedIn" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/social3.svg" alt="Social M" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/social4.svg" alt="Github" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/social5.svg" alt="Another Social Media" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="works-wrapper" id="works-wrapper">
+    </section>
+
+    <section class="about-myself generic-container" id="about-myself">
+      <div class="about-myself_elements">
+        <h2 class="generic_title">About Myself</h2>
+        <p>
+          Hello I’m a software developer! I can help you build a product ,
+          feature or website Look through some of my work and experience! If you
+          like what you see and have a project you need coded, don’t hestiate to
+          contact me.
+        </p>
+        <a href="https://wa.me/584142221022">Let’s connect</a>
+        <ul class="social_wrapper">
+          <li>
+            <a href="#"><img src="img/social1.svg" alt="Twitter" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/social2.svg" alt="LinkedIn" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/social3.svg" alt="Social M" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/social4.svg" alt="Github" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/social5.svg" alt="Another Social Media" /></a>
+          </li>
+        </ul>
+        <button>Get my resume</button>
       </div>
-      <div class="icons">
-        <a href="mailto:anthonymartin20@gmail.com" target="_blank">
-          <img src="images/email.svg" alt="email">
-        </a>
-        <a href="https://github.com/anthonymr" target="_blank">
-          <img src="images/github.svg" alt="github">
-        </a>
-        <a href="https://www.linkedin.com/in/anthony-martin-rodriguez/" target="_blank">
-          <img src="images/linkedin.svg" alt="linkedin">
-        </a>
-        <a href="https://twitter.com/Anthony2Martin" target="_blank">
-          <img src="images/twitter.svg" alt="twitter">
-        </a>
+
+      <ul class="about-myself_menu-wrapper">
+        <li class="expanded">
+          <div class="about-myself_menu-item">
+            <h4 class="languages-title">Languages</h4>
+            <img src="img/chevron-right.svg" alt="chevron-icon" />
+          </div>
+
+          <ul class="languages-wrapper">
+            <li>
+              <img src="img/javaScript.png" alt="JavaScript-logo" />
+              JavaScript
+            </li>
+            <li>
+              <img src="img/HTML.png" alt="HTML-logo" />
+              HTML
+            </li>
+            <li>
+              <img src="img/CSS.png" alt="CSS-logo" />
+              CSS
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="about-myself_menu-item">
+            <h4>Frameworks</h4>
+            <img src="img/chevron-right.svg" alt="chevron-icon" />
+          </div>
+        </li>
+
+        <li>
+          <div class="about-myself_menu-item">
+            <h4>Skills</h4>
+            <img src="img/chevron-right.svg" alt="chevron-icon" />
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact-form" id="contact-form">
+      <div class="contact-form__wrapper">
+        <h2 class="contant-form__header">Contact me</h2>
+        <p class="contact_form__paragraph">
+          If you have an application you are interested in developing, a
+          feature that you need built or a project that needs coding. I’d love
+          to help with it
+        </p>
+
+        <form class="contact_form__form" action="https://formspree.io/f/mrgdnpkk" method="POST" id="form">
+          <label for="name" class="form-label">Your name</label>
+          <input type="text" name="name" maxlength="30" placeholder="Your name" required class="field-data" />
+
+          <label for="email" class="form-label"></label>
+          <input type="email" name="email" required placeholder="Your e-mail" class="field-data" />
+
+          <label for="message" class="form-label"></label>
+          <textarea name="message" maxlength="500" required placeholder="Write your message here" class="field-data"></textarea>
+          <div class="error-message">
+            <span id="error-message" class="hidden">Testing error message.</span>
+          </div>
+          
+          <button>Get in Touch</button>
+          <div class="contact-form__black-bar">
+            <div></div>
+          </div>
+        </form>
       </div>
-    </div>
-  </header>
-  <section class="about-me">
-    <div>
-      <h3>FULL-STACK DEVELOPER</h3>
-      <p>Hi, I'm Anthony Martin. I'm a full-stack developer with a passion for creating beautiful, functional websites and applications. I'm currently looking for a full-time position as a developer with 10+ years using web technologies to automate the tedious stuff.</p>
-      <a href="#contact-me"><button>Get in touch</button></a>
-    </div>
-  </section>
-  <section class="projects dark" id="last-projects">
-    <h4>Some of my lastest work</h4>
-    <div class="projects-wrapper">
-      <article class="project" onclick="window.open('https://github.com/anthonymr/ruby-resorts-backend', '_blank');">
-        <div class="project-screen">
-          <img src="images/projects/ruby-resorts.svg" alt="Ruby resorts">
-        </div>
-        <div class="project-info">
-          <h5>Ruby resorts</h5>
-          <p class="description">Room booking system</p>
-          <p class="kind">Full-stack app</p>
-        </div>
-      </article>
-      <article class="project" onclick="window.open('https://github.com/anthonymr/releveca-backend', '_blank');">
-        <div class="project-screen">
-          <img src="images/projects/releveca.svg" alt="Releveca">
-        </div>
-        <div class="project-info">
-          <h5>Releveca</h5>
-          <p class="description">Multicorporation e-commerce</p>
-          <p class="kind">Full-stack app</p>
-        </div>
-      </article>
-      <article class="project" onclick="window.open('https://github.com/anthonymr/buddget', '_blank');">
-        <div class="project-screen">
-          <img src="images/projects/buddget.svg" alt="Buddget">
-        </div>
-        <div class="project-info">
-          <h5>Buddget</h5>
-          <p class="description">Buddget manager app</p>
-          <p class="kind">Full-stack app</p>
-        </div>
-      </article>
-      <article class="project" onclick="window.open('https://github.com/anthonymr/stock-screener', '_blank');">
-        <div class="project-screen">
-          <img src="images/projects/stock-screener.svg" alt="Stock screener">
-        </div>
-        <div class="project-info">
-          <h5>Stock Screener</h5>
-          <p class="description">Stock monitoring application</p>
-          <p class="kind front-end">Front-end app</p>
-        </div>
-      </article>
-    </div>
-  </section>
-  <section class="current-stack" id="current-stack">
-      <h4>My current stack</h4>
-      <div class="techs-wrapper">
-        <div class="tech vue">
-          <div class="tech-image"></div>
-          <div class="tech-info">
-            <div class="name front-end">Vue.JS</div>
-            <div class="kind">front-end</div>
-          </div>
-        </div>
-        <div class="tech react">
-          <div class="tech-image"></div>
-          <div class="tech-info">
-            <div class="name front-end">React.JS</div>
-            <div class="kind">front-end</div>
-          </div>
-        </div>
-        <div class="tech rails">
-          <div class="tech-image"></div>
-          <div class="tech-info">
-            <div class="name back-end">Ruby on Rails</div>
-            <div class="kind">back-end</div>
-          </div>
-        </div>
-        <div class="tech postgres">
-          <div class="tech-image"></div>
-          <div class="tech-info">
-            <div class="name back-end">PostgreSQL</div>
-            <div class="kind">back-end</div>
-          </div>
-        </div>
+    </section>
+
+    <section class="mobile-menu hidden" id="mobile-menu">
+      <div class="mobile-menu__close">
+        <img src="img/close-icon.png" id="close-img">
       </div>
-      <h4>My daily tools</h4>
-      <div class="daily-tools">
-        <div class="tool">
-          <img src="images/daily-tools/git.svg" alt="Git">
-        </div>
-        <div class="tool">
-          <img src="images/daily-tools/github.svg" alt="GitHub">
-        </div>
-        <div class="tool">
-          <img src="images/daily-tools/vscode.svg" alt="VSCode">
-        </div>
-        <div class="tool">
-          <img src="images/daily-tools/notion.svg" alt="Notion">
-        </div>
-        <div class="tool">
-          <img src="images/daily-tools/figma.svg" alt="Figma">
-        </div>
-        <div class="tool">
-          <img src="images/daily-tools/slack.svg" alt="Slack">
-        </div>
-      </div>
-      <div class="daily-tools">
-        <div class="tool">
-          <img src="images/daily-tools/console.svg" alt="Terminal">
-        </div>
-        <div class="tool">
-          <img src="images/daily-tools/jest.svg" alt="Jest">
-        </div>
-        <div class="tool">
-          <img src="images/daily-tools/redux.svg" alt="Redux">
-        </div>
-        <div class="tool">
-          <img src="images/daily-tools/pinia.svg" alt="Pinia">
-        </div>
-        <div class="tool">
-          <img src="images/daily-tools/rubocop.svg" alt="Rubocop">
-        </div>
-        <div class="tool">
-          <img src="images/daily-tools/rspec.svg" alt="RSpec">
-        </div>
-      </div>
-  </section>
-  <section class="contact-me dark" id="contact-me">
-    <h4>Contact me</h4>
-    <div class="contact-wrapper">
-      <div class="contact-info">
-        <div class="info">
-          <div class="info-icon">
-            <img src="/images/email.svg" alt="Email">
-          </div>
-          <div class="info-text">
-            <a href="mailto:anthonymartin20@gmail.com" target="_blank"><h4>anthonymartin20@gmail.com</h4></a>
-          </div>
-        </div>
-        <div class="info">
-          <div class="info-icon">
-            <img src="/images/linkedin.svg" alt="Email">
-          </div>
-          <div class="info-text">
-            <a href="https://www.linkedin.com/in/anthony-martin-rodriguez/" target="_blank"><h4>@anthony-martin-rodriguez</h4></a>
-          </div>
-        </div>
-        <div class="info">
-          <div class="info-icon">
-            <img src="/images/github.svg" alt="Email">
-          </div>
-          <div class="info-text">
-            <a href="https://github.com/anthonymr" target="_blank"><h4>@anthonymr</h4></a>
-          </div>
-        </div>
-        <div class="info">
-          <div class="info-icon">
-            <img src="/images/twitter.svg" alt="Email">
-          </div>
-          <div class="info-text">
-            <a href="https://twitter.com/Anthony2Martin" target="_blank"><h4>@Anthony2Martin</h4></a>
-          </div>
+      <ul>
+        <li><a href="#works-wrapper">Portfolio</a></li>
+        <li><a href="#about-myself">About</a></li>
+        <li><a href="#contact-form">Contact</a></li>
+      </ul>
+    </section>
+
+    <section class="modal hidden" id="modal">
+      <div class="modal__wrapper">
+        <div class="modal__close" id="close-modal"><img src="img/dark-close-icon.svg"></div>
+        <div class="modal__content" id="modal-content">
         </div>
       </div>
-      <form 
-        class="contact-form"
-        action="https://formspree.io/f/mrgwgqkp"
-        method="POST"
-      >
-        <div class="field">
-          <input type="text" placeholder="Name" name="name" required>
-        </div>
-        <div class="field">
-          <input type="email" placeholder="Email" name="email" required>
-        </div>
-        <div class="field double">
-          <textarea placeholder="Message" name="message" required></textarea>
-        </div>
-        <div class="field">
-          <button type="submit">Send</button>
-        </div>
-      </form>
-    </div>
-  </section>
+    </section>
+  </main>
 </body>
+
 </html>

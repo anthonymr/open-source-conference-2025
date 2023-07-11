@@ -35,7 +35,6 @@
   <ul>
     <li><a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a></li>
     <li><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></li>
-    <li><a href="https://developer.mozilla.org/es/docs/Web/javascript">JavaScript</a></li>
   </ul>
 </details>
 
@@ -45,7 +44,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://anthonymr.github.io/)
+- [Live Demo Link](https://anthonymr.github.io)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
