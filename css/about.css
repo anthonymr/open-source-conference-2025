@@ -1,0 +1,158 @@
+header {
+  background-image: url('../img/background.svg');
+}
+
+section {
+  text-align: center;
+}
+
+.p-box--logo {
+  width: calc(100% - 40px);
+  margin: 20px;
+}
+
+.force-wrap {
+  max-width: 250px;
+}
+
+.p-box {
+  font-size: 12px;
+}
+
+.header-content {
+  padding: 30px 20px 30px 20px;
+}
+
+.logo-section {
+  padding: 20px 20px 40px 20px;
+  color: var(--dark);
+}
+
+.legacy-section {
+  border-top: 1px solid var(--light);
+  padding: 20px 20px 40px 20px;
+  color: var(--dark);
+}
+
+.legacy-section__articles > article {
+  margin: 15px 20px;
+  width: calc(100% - 40px);
+  background-size: cover;
+}
+
+.legacy-section__summit {
+  height: 180px;
+  background-color: #ec524299;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.legacy-section__summit > div:first-child {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#buenos-aires-2013 {
+  background-image: url('../img/summits/2013.jpg');
+}
+
+#warsaw-2011 {
+  background-image: url('../img/summits/2011.jpg');
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 50px;
+    max-width: 700px;
+  }
+
+  footer {
+    background-color: var(--dark-background);
+    color: white;
+  }
+
+  .header-content {
+    padding: 70px var(--desktop-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .header-content h2 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .header-content > .orange-line {
+    margin-bottom: 50px;
+  }
+
+  .header-content > .p-box--light {
+    margin-bottom: 50px;
+  }
+
+  .header-content__location {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 12px;
+    color: var(--medium);
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+  }
+
+  .header-content__location img {
+    height: 12px;
+  }
+
+  .header-content__location span {
+    color: var(--orange);
+    margin: 0 5px;
+  }
+
+  .p-box {
+    max-width: 900px;
+  }
+
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--desktop-padding);
+  }
+
+  .logo-container {
+    width: 400px;
+    margin-top: 20px;
+  }
+
+  .force-wrap {
+    max-width: 100%;
+  }
+
+  .legacy-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--desktop-padding);
+  }
+
+  .legacy-section__articles {
+    display: flex;
+    max-width: 1000px;
+  }
+
+  .legacy-section__summit {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

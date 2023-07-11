@@ -2,179 +2,160 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anthony Martin Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="js/menu.js" defer></script>
-  <script src="js/modal.js" defer></script>
-  <script src="js/form_validation.js" defer></script>
-  <script src="js/local_storage.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Source Software Conference 2023</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+    <script src="js/global_floating_menu.js" defer></script>
+    <script src="js/index_featured_speakers.js" defer></script>
+    <script src="js/index_see_more.js" defer></script>
 </head>
 
 <body>
-  <main>
-    <header>
-      <div class="header-logo">Anthony Martin</div>
-      <nav>
-        <div class="header-menu-button" id="hamburger">
-          <div>Portfolio</div>
-          <div>About</div>
-          <div>Contact</div>
+    <main>
+        <header>
+            <nav class="mobile-only">
+                <div class="hamburguer-menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+            <nav class="small-nav desktop-only">
+                <ul class="small-nav__menu">
+                    <li><img src="img/social/facebook.svg"></li>
+                    <li><img src="img/social/twitter.svg"></li>
+                    <li>Logout</li>
+                    <li>Mypage</li>
+                    <li>Korean</li>
+                </ul>
+            </nav>
+            <nav class="big-nav desktop-only">
+                <div class="big-nav__logo">
+                    <a href="index.html"><img src="img/logo.svg" alt="Open Source Software Conference 2023"></a>
+                </div>
+                <div class="big-nav__menu">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Program</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Sponsor</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="big-nav__button">
+                    <div>
+                        CC Campaing
+                    </div>
+                </div>
+            </nav>
+            <section class="header-content">
+                <h2 class="t-orange">"Hello! Open world"</h2>
+                <h1 class="texture-text">Open Source Software Conference 2023</h1>
+                <p class="p-box p-box--dark">
+                    An umbrella conference, composed of a collection of 
+                    events covering the most important technologies, 
+                    topics, and issues affecting open source today.
+                </p>
+                <h3>2023.10.19(THU) ~ 20(FRI)</h3>
+                <p>@ Teresa Carreno Theater, Caracas, Venezuela</p>
+            </section>
+        </header>
+
+        <section class="main-program">
+            <div class="f-column">
+                <h2>Main Program</h2>
+                <div class="orange-line"></div>
+            </div>
+            <ul class="main-program__program">
+                <li>
+                    <div class="program__image"><img src="/img/icons/lecture.svg"></div>
+                    <div class="program__title"><h2 class="t-orange">Lecture</h2></div>
+                    <div class="program__content">Listen to the speakers from various countries about the messeges of sharing and opening.</div>
+                </li>
+                <li>
+                    <div class="program__image"><img src="/img/icons/exhibition.svg"></div>
+                    <div class="program__title"><h2 class="t-orange">OS Exhibition</h2></div>
+                    <div class="program__content">Listen to the speakers from various countries about the messeges of sharing and opening.</div>
+                </li>
+                <li>
+                    <div class="program__image"><img src="/img/icons/forum.svg"></div>
+                    <div class="program__title"><h2 class="t-orange">Forum</h2></div>
+                    <div class="program__content">Listen to the speakers from various countries about the messeges of sharing and opening.</div>
+                </li>
+                <li>
+                    <div class="program__image"><img src="/img/icons/workshop.svg"></div>
+                    <div class="program__title"><h2 class="t-orange">Workshop</h2></div>
+                    <div class="program__content">Listen to the speakers from various countries about the messeges of sharing and opening.</div>
+                </li>
+                <li>
+                    <div class="program__image"><img src="/img/icons/ignite.svg"></div>
+                    <div class="program__title"><h2 class="t-orange">OS Ignite</h2></div>
+                    <div class="program__content">Listen to the speakers from various countries about the messeges of sharing and opening.</div>
+                </li>
+            </ul>
+            <div class="f-column">
+                <button>
+                    <span class="mobile-only">Join OS Software Conference 2023</span>
+                    <span class="desktop-only">See the whole program</span>
+                </button>
+            </div>
+            
+        </section>
+
+        <section class="featured-speakers">
+            <div class="f-column">
+                <h2>Featured Speakers</h2>
+                <div class="orange-line"></div>
+            </div>
+
+            <div class="f-column speakers-list">
+            </div>
+            <div class="show-more mobile-only">More <div class="chevron"></div></div>
+        </section>
+        <section class="partner-section desktop-only">
+            <div class="f-column">
+                <h2 class="force-wrap">Partner</h2>
+                <div class="orange-line"></div>
+            </div>
+            <ul class="partners">
+                <li><img src="img/partners/mozilla.svg"></li>
+                <li><img src="img/partners/google.svg"></li>
+                <li><img src="img/partners/naver.svg"></li>
+                <li><img src="img/partners/daumkakao.svg"></li>
+                <li><img src="img/partners/airbnb.svg"></li>
+            </ul>
+        </section>
+        <footer class="desktop-only">
+            <div>
+                <img src="img/logo-black.svg">
+            </div>
+            <div>
+                2015 Creative Commons Korea Some Rights Reserved.
+            </div>
+        </footer>
+    </main>
+
+    <section class="floating-menu mobile-only">
+        <div class="floating-menu__items">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Sponsor</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
         </div>
-      </nav>
-    </header>
-
-    <section class="headline generic-container" id="headline">
-      <h1 class="generic_title">I’m Anthony Glad to see you!</h1>
-      <p>
-        I’m a software developer! I can help you build a product , feature or
-        website Look through some of my work and experience! If you like what
-        you see and have a project you need coded, don’t hestiate to contact
-        me.
-      </p>
-      <a href="https://wa.me/584142221022">Let’s connect</a>
-      <ul class="social_wrapper">
-        <li>
-          <a href="#"><img src="img/social1.svg" alt="Twitter" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/social2.svg" alt="LinkedIn" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/social3.svg" alt="Social M" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/social4.svg" alt="Github" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/social5.svg" alt="Another Social Media" /></a>
-        </li>
-      </ul>
     </section>
-
-    <section class="works-wrapper" id="works-wrapper">
-    </section>
-
-    <section class="about-myself generic-container" id="about-myself">
-      <div class="about-myself_elements">
-        <h2 class="generic_title">About Myself</h2>
-        <p>
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don’t hestiate to
-          contact me.
-        </p>
-        <a href="https://wa.me/584142221022">Let’s connect</a>
-        <ul class="social_wrapper">
-          <li>
-            <a href="#"><img src="img/social1.svg" alt="Twitter" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/social2.svg" alt="LinkedIn" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/social3.svg" alt="Social M" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/social4.svg" alt="Github" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/social5.svg" alt="Another Social Media" /></a>
-          </li>
-        </ul>
-        <button>Get my resume</button>
-      </div>
-
-      <ul class="about-myself_menu-wrapper">
-        <li class="expanded">
-          <div class="about-myself_menu-item">
-            <h4 class="languages-title">Languages</h4>
-            <img src="img/chevron-right.svg" alt="chevron-icon" />
-          </div>
-
-          <ul class="languages-wrapper">
-            <li>
-              <img src="img/javaScript.png" alt="JavaScript-logo" />
-              JavaScript
-            </li>
-            <li>
-              <img src="img/HTML.png" alt="HTML-logo" />
-              HTML
-            </li>
-            <li>
-              <img src="img/CSS.png" alt="CSS-logo" />
-              CSS
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <div class="about-myself_menu-item">
-            <h4>Frameworks</h4>
-            <img src="img/chevron-right.svg" alt="chevron-icon" />
-          </div>
-        </li>
-
-        <li>
-          <div class="about-myself_menu-item">
-            <h4>Skills</h4>
-            <img src="img/chevron-right.svg" alt="chevron-icon" />
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="contact-form" id="contact-form">
-      <div class="contact-form__wrapper">
-        <h2 class="contant-form__header">Contact me</h2>
-        <p class="contact_form__paragraph">
-          If you have an application you are interested in developing, a
-          feature that you need built or a project that needs coding. I’d love
-          to help with it
-        </p>
-
-        <form class="contact_form__form" action="https://formspree.io/f/mrgdnpkk" method="POST" id="form">
-          <label for="name" class="form-label">Your name</label>
-          <input type="text" name="name" maxlength="30" placeholder="Your name" required class="field-data" />
-
-          <label for="email" class="form-label"></label>
-          <input type="email" name="email" required placeholder="Your e-mail" class="field-data" />
-
-          <label for="message" class="form-label"></label>
-          <textarea name="message" maxlength="500" required placeholder="Write your message here" class="field-data"></textarea>
-          <div class="error-message">
-            <span id="error-message" class="hidden">Testing error message.</span>
-          </div>
-          
-          <button>Get in Touch</button>
-          <div class="contact-form__black-bar">
-            <div></div>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <section class="mobile-menu hidden" id="mobile-menu">
-      <div class="mobile-menu__close">
-        <img src="img/close-icon.png" id="close-img">
-      </div>
-      <ul>
-        <li><a href="#works-wrapper">Portfolio</a></li>
-        <li><a href="#about-myself">About</a></li>
-        <li><a href="#contact-form">Contact</a></li>
-      </ul>
-    </section>
-
-    <section class="modal hidden" id="modal">
-      <div class="modal__wrapper">
-        <div class="modal__close" id="close-modal"><img src="img/dark-close-icon.svg"></div>
-        <div class="modal__content" id="modal-content">
-        </div>
-      </div>
-    </section>
-  </main>
 </body>
 
 </html>
