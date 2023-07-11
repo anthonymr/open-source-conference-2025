@@ -22,9 +22,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 HTML + basic JavaScript Capstone <a name="about-project"></a>
+# 📖 OPEN SOURCE SOFTWARE CONFERENCE 2025 <a name="about-project"></a>
 
-**HTML + basic JavaScript Capstone** is a professional web page about the Open Source community.
+An umbrella conference, composed of a collection of events covering the most important technologies, topics, and issues affecting open source today..
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -35,7 +35,7 @@
   <ul>
     <li><a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a></li>
     <li><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></li>
-    <li><a href="https://developer.mozilla.org/es/docs/Web/javascript">JS</a></li>
+    <li><a href="https://developer.mozilla.org/es/docs/Web/javascript">JavaScript</a></li>
   </ul>
 </details>
 
@@ -45,7 +45,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://anthonymr.github.io)
+- [Live Demo Link](https://anthonymr.github.io/open-source-conference-2025/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
